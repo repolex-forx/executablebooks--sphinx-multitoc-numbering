@@ -1,1 +1,121 @@
-Initializing
+# Repolex Knowledge Graph of executablebooks/sphinx-multitoc-numbering
+
+RDF knowledge graph data for [executablebooks/sphinx-multitoc-numbering](https://github.com/executablebooks/sphinx-multitoc-numbering), parsed by [repolex](https://repolex.ai).
+
+> **Note**: This data is experimental and subject to change without notice.
+
+## How to use this data
+
+The easiest way to get started is to install the [rlex](https://github.com/repolex-ai/rlex) query tool:
+
+```bash
+cargo install --git https://github.com/repolex-ai/rlex
+```
+
+Verify the install:
+
+```bash
+rlex --help
+```
+
+**rlex is designed to be used primarily by LLMs in a terminal.** Start up your favorite AI assistant and ask it to use rlex. It handles the SPARQL — you just ask questions in plain English.
+
+To load this repo's data:
+
+```bash
+rlex download executablebooks/sphinx-multitoc-numbering
+```
+
+Consult `rlex --help` for other options, including SPARQL queries, HTTP server, and interactive visualization.
+
+## Data structure
+
+All data is stored as gzip-compressed [N-Quads](https://www.w3.org/TR/n-quads/) (`.nq.gz`), a standard RDF format that can be loaded into any triplestore or graph database.
+
+```
+.
+├── aggregate
+│   ├── ast
+│   │   └── c276df8f9ee939a0a7fcd820c6649663b3164ee6
+│   │       └── chunk-001.nq.gz
+│   └── repolex
+│       └── c276df8f9ee939a0a7fcd820c6649663b3164ee6
+│           └── chunk-001.nq.gz
+├── blob
+│   ├── 0e03e16441e19b452fa1557e4f0596c319787af5.nq.gz
+│   ├── 13f5e0f44ff3bb1fc826f479c37125d06a882e50.nq.gz
+│   ├── 165703eea56dc95ac6a38513c17033841c216c86.nq.gz
+│   ├── 1aba38f67a2211cf5b09466d7b411206cb7223bf.nq.gz
+│   ├── 2119f51099bf37e4fdb6071dce9f451ea44c62dd.nq.gz
+│   ├── 25acb04e913538c2dc26869e15a1ea90c960b6ec.nq.gz
+│   ├── 277fa243ccfb316ed275fa2c0f2a17ffbee6365e.nq.gz
+│   ├── 2a9af3accdce7152240d8b3a5918f9ee5618b453.nq.gz
+│   ├── 2fefbe1214b9d911bb42c1b8dc60d40415469cbd.nq.gz
+│   ├── 311d17d60a3ba038b4729e03c08ea67ac5abe6b8.nq.gz
+│   ├── 32c7ba27fa46ad900eca1867e71b55eecb0182a1.nq.gz
+│   ├── 3486342461e8d1b4557892a21918ae089f5f1f2a.nq.gz
+│   ├── 44493df84547e0b67466d5771f786c86cf33ebdc.nq.gz
+│   ├── 4de1a3677131424bcad900105ba785b59bb9cb96.nq.gz
+│   ├── 4ef8554280c082aa888ddc09f144920c1895f51e.nq.gz
+│   ├── 60a259859520983735d69be37f9006701d048275.nq.gz
+│   ├── 661e1af4d7a233958be1c92b6e1d543a3fc3c49c.nq.gz
+│   ├── 6a64b225eaaf926af352c41efc1c17d8724035ba.nq.gz
+│   ├── 71996da6bf38875bceacff841437d2bc72ad1d4a.nq.gz
+│   ├── 78e3af7d3735a62aef063021a3ad649ae9d9337f.nq.gz
+│   ├── 86324c5d31f9ad28d6c3fab221e5d1c16c2aa386.nq.gz
+│   ├── 876eac053392f3bc612d2fbcb8ca7bdac1f4e716.nq.gz
+│   ├── 8b0d26e424c9a18c7402c1e10b01791d25eaa446.nq.gz
+│   ├── 8ea73b12b029ee312737f5b7ca3b274d8894f246.nq.gz
+│   ├── 94ee68a5729de950598ccf9ecc6507c51c4df7ab.nq.gz
+│   ├── 9534b018135ed7d5caed6298980c55e8b1d2ec82.nq.gz
+│   ├── 972bc53d7bb239fe612f4f9674eaef036f3fcc15.nq.gz
+│   ├── 9e06ed58282a8d0310d54284b491df47e382f592.nq.gz
+│   ├── a3166acb33f021e457056555f98ea914d35ccb17.nq.gz
+│   ├── a4d7f32607868015f3faccfc6e0ff7b08cea2fb2.nq.gz
+│   ├── b47cdebb214553f21874a2e4be9238a7b8154f24.nq.gz
+│   ├── c704ed46e66c62bb20a7f58d5469a7d6ec40b46d.nq.gz
+│   ├── d0c3cbf1020d5c292abdedf27627c6abe25e2293.nq.gz
+│   ├── d4bb2cbb9eddb1bb1b4f366623044af8e4830919.nq.gz
+│   ├── d90f2718f06dd476343220e97ba7d10e3a7137e6.nq.gz
+│   ├── dda9865ad01e8f6ecebfc69f0889c81050a594f0.nq.gz
+│   ├── e35348532a9dc00f424804dc402d25c3eacdb73d.nq.gz
+│   ├── ecbd80fa5d6251746c427cef3a3e145f199dfe90.nq.gz
+│   ├── ecefaecd8ead756f5fde3ef64d282b9d830f6da5.nq.gz
+│   ├── edc8f4fb4de7d52cfae1f3925636869a0476a964.nq.gz
+│   ├── f298ea123116972894f48e86012d22c19737c717.nq.gz
+│   └── f480df94d39f982417221cab5aa3ff56184602dd.nq.gz
+├── branch
+│   └── branch.nq.gz
+├── commit
+│   └── commit.nq.gz
+├── filetree
+│   └── c276df8f9ee939a0a7fcd820c6649663b3164ee6.nq.gz
+├── issue
+│   └── issue.nq.gz
+├── pr
+│   └── pr.nq.gz
+└── tag
+    └── tag.nq.gz
+
+13 directories, 50 files
+```
+
+| Directory | What it contains |
+|-----------|-----------------|
+| `blob/` | Per-file AST graphs, content-addressed by git blob SHA. Each file in the source repo gets its own graph. |
+| `aggregate/ast/` | Combined AST graph per parsed commit. Merges all blob graphs for a snapshot of the entire codebase at that point. |
+| `aggregate/lsp/` | Language Server Protocol enrichment: resolved symbols, definitions, references, and type information. |
+| `aggregate/dataflow/` | Interprocedural data flow edges between functions and modules. |
+| `aggregate/repolex/` | Combined graph (AST + LSP + dataflow) per commit. |
+| `commit/` | Git commit metadata (author, date, message, parent links). |
+| `branch/` | Branch metadata. |
+| `tag/` | Tag metadata. |
+| `filetree/` | File tree snapshots per commit (which files existed and their blob SHAs). |
+| `audit/` | Code architecture and graph audit reports per commit. |
+
+## Source repository
+
+[executablebooks/sphinx-multitoc-numbering](https://github.com/executablebooks/sphinx-multitoc-numbering)
+
+---
+*Parsed on 2026-10-21 by [repolex](https://repolex.ai)*
