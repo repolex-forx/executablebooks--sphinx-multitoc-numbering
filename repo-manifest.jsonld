@@ -8,7 +8,7 @@
     {
       "@id": "https://repolex.ai/r/executablebooks/sphinx-multitoc-numbering/commit/c276df8f9ee939a0a7fcd820c6649663b3164ee6",
       "git:hexsha": "c276df8f9ee939a0a7fcd820c6649663b3164ee6",
-      "repolex:parseStatus": "metadata_complete",
+      "repolex:parseStatus": "ast_complete",
       "git:tagName": "v0.1.3"
     },
     {
